@@ -1,0 +1,80 @@
+.parent {
+  background-color: #fbcfe8;
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  height: 100px;
+  align-items: center;
+  margin: 17px auto;
+  border-radius: 4px;
+  box-shadow: -1px 3px 4px 0px #fce7f3;
+}
+h5 {
+  font-size: 30px;
+  color: #9d174d;
+  width: 14vw;
+  overflow-x: auto;
+  scrollbar-color: red #9d174d;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 7px;
+}
+ 
+/* Track */
+&::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+&::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+&::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+}
+.btn {
+  width: 30px;
+  background-color: #6ee7b7;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  color: white;  cursor:pointer;
+
+  &:hover {
+    filter: grayscale(50%);
+  }
+}
+.btnRemove {
+  cursor:pointer;
+  background-color: #ff6f69;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  color: white;
+  height: 36px;
+  &:hover {
+    filter: grayscale(50%);
+  }
+}
+.oneColor {
+  background-color: #f74796;
+}
+.value {
+  background-color: #6d28d9;
+  border: #a78bfa;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: white;
+}
