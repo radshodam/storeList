@@ -8,15 +8,15 @@ function productList() {
   // use state for hook
   const [product, setProduct] = useState(productsData);
   // const [input, setInput] = useState();
- // function handleDelete get id
- const onDelete = (id) => {
-  // use clone product. COPY products on [] for use methods array
-  const productsClone = [...product];
-  // use method find for Array
-  // Array.find((p)=>p.id===id)  was equal
-  const filterProducts = productsClone.filter((p) => p.id !== id);
-  setProduct(filterProducts);
-};
+  // function handleDelete get id
+  const onDelete = (id) => {
+    // use clone product. COPY products on [] for use methods array
+    const productsClone = [...product];
+    // use method find for Array
+    // Array.find((p)=>p.id===id)  was equal
+    const filterProducts = productsClone.filter((p) => p.id !== id);
+    setProduct(filterProducts);
+  };
   // function increament (ID)
   const increamentHandler = (id) => {
     // 1.id=>ok
@@ -67,22 +67,22 @@ function productList() {
     setProduct(productsClone);
   };
 
- 
-
   return (
     <div>
       {product.map((n) => {
         return (
-          <Products
-            key={n.id}
-            title={n.title}
-            price={n.price}
-            quantity={n.quantity}
-            onIncreament={() => increamentHandler(n.id)}
-            onDecreament={() => decreamentHandler(n.id)}
-            onDelete={() => onDelete(n.id)}
-            ChangeInput={(e) => handleChangeInput(e, n.id)}
-          />
+          <div>
+            <Products
+              key={n.id}
+              title={n.title}
+              price={n.price}
+              quantity={n.quantity}
+              onIncreament={() => increamentHandler(n.id)}
+              onDecreament={() => decreamentHandler(n.id)}
+              onDelete={() => onDelete(n.id)}
+              ChangeInput={(e) => handleChangeInput(e, n.id)}
+            />
+          </div>
         );
       })}
     </div>
