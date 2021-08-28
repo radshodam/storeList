@@ -1,0 +1,29 @@
+nav {
+  background-color: #b9d7ff;
+  color: #2563eb;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 22px;
+  height: 100px;
+  align-items: center;
+}
+nav h3 {
+  font-size: 27px;
+}
+.carts {
+  display: flex;
+  justify-content: space-around;
+}
+.carts .number {
+  font-size: 22px;
+  background: #c4b5fd;
+  padding: 4px;
+  border-radius: 35px;
+  color: #ffffff;
+  margin: 2px;
+}
+.carts span {
+  display: block;
+  font-size: 22px;
+  margin: 2px;
+}

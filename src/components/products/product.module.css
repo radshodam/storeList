@@ -37,7 +37,7 @@ h5::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.4);
 }
 .btn {
-  width: 30px;
+  width: 35px;
   background-color: #6ee7b7;
   padding: 5px;
   margin: 6px;
@@ -46,6 +46,7 @@ h5::-webkit-scrollbar-thumb:window-inactive {
   font-size: 25px;
   color: white;
   cursor: pointer;
+  box-shadow: 1px 2px 5px 0px #3f3f3f61;
 }
 .btn:hover {
   filter: grayscale(50%);
@@ -60,15 +61,17 @@ h5::-webkit-scrollbar-thumb:window-inactive {
   font-size: 17px;
   color: white;
   height: 36px;
+  box-shadow: 1px 2px 5px 0px #3f3f3f61;
 }
 .btnRemove:hover {
   filter: grayscale(50%);
 }
 .oneColor {
   background-color: #f74796;
+  font-size: 20px;
 }
 .value {
-  background-color: #6d28d9;
+  background-color: #bfa3ecc5;
   border: #a78bfa;
   border-radius: 50%;
   padding: 10px 14px;
