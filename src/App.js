@@ -3,7 +3,7 @@ import ProductList from "./components/productList/productList";
 import styles from "./app.module.css";
 function App() {
   return (
-    <div>dcdc
+    <div>
       <nav>
         <h3>shopping carts</h3>
         <div className={styles.carts}>
